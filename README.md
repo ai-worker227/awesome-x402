@@ -263,6 +263,7 @@ Full working examples and templates.
 - REST API with Auth Pricing - SIWE + dynamic pricing.
 - [PortsideLabs Places API](https://portsidelabs-x402-places-536698811508.us-west1.run.app) - Google Places API v1 proxy with x402 pay-per-request access. Exposes place detail lookup and full-text search via USDC micropayments on Base mainnet and Solana mainnet. $0.001 USDC per call.
 - [PortsideLabs KoinChappie](https://portsidelabs-x402-koinchappie-536698811508.us-west1.run.app) - Crypto signals API with x402 pay-per-request. Returns bull and bear signals for the top 10 cryptocurrencies by market cap across 8 timeframes (1m–1D) using SMA(14). Single-coin lookup supports any CryptoCompare symbol. USDC micropayments on Base mainnet and Solana mainnet. $0.001 USDC per call. 
+- [aiworker-data](https://aiworker.duckdns.org) - Deterministic-first data API for agents: DeFi yields and protocol snapshots, Base token safety and wallet cards, Polymarket odds/resolution/history/backtests, crypto news and social mentions, page-to-Markdown, fact checks and cited briefs. 20 routes, $0.005–$1 USDC per call on Base and Solana, no key. [Catalogue](https://aiworker.duckdns.org/llms.txt)
 
 ### Client Examples
 
@@ -358,12 +359,14 @@ x402-native GPU inference APIs that let agents pay autonomously for compute.
 - [PayCrow](https://github.com/michu5696/paycrow) - Escrow protection for autonomous agent payments. Trust scoring from 4 on-chain sources + USDC escrow with dispute resolution on Base. 10 MCP tools including safe_pay (trust-informed smart escrow) and trust_gate (go/no-go decision before payment). ([npm](https://www.npmjs.com/package/paycrow))
 - [Recall Kitchen](https://recallkitchen.com/docs/#mcp) - MCP server for searching food/product/vehicle recalls. Accepts x402 payments, no account required, $0.025 USDC on Base per request. [Examples](https://github.com/Recall-Kitchen/rk-mcp/tree/master/examples/go)
 - [Human Pages](https://humanpages.ai) - The open directory AI agents use to hire humans for real-world tasks. Supports x402 pay-per-use for profile views ($0.05) and job offers ($0.25) in USDC on Base. Also available as an [MCP server](https://github.com/human-pages-ai/humanpages) with 31 tools.
+- [aiworker-data MCP](https://aiworker.duckdns.org/mcp) - Remote streamable-HTTP MCP server with 18 x402-paid data tools (DeFi yields, Base token and wallet cards, Polymarket odds and backtests, news, fact checks, cited briefs), $0.005–$1 USDC per call on Base and Solana; listed in the official MCP registry. [Docs](https://aiworker.duckdns.org/llms.txt)
 
 ### Agent Frameworks
 
 - [NEAR AI](https://near.ai) - Cross-chain agent settlements.
 - [Phidata Agents](https://github.com/phidatahq/phidata) - Multi-modal agents with x402.
 - [Vault-0](https://github.com/0-Vault/Vault-0) - Encrypted secret vault, agent monitor, and x402 wallet for OpenClaw. Handles 402 detection, EIP-3009 signing, and policy-gated auto-settlement.
+- [aiworker wrappers](https://github.com/ai-worker227/aiworker-examples) - Ready-made x402 tool packages for LangChain, Vercel AI SDK, ElizaOS, OpenAI Agents SDK and Mastra: one paying fetch, one tool per paid data route, prices in the tool descriptions.
 
 ### Agent-to-Agent (A2A)
 
